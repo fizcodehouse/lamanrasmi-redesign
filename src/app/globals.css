@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-teal: #0d3b4a;
+  --color-deep-teal-700: #154f61;
+  --color-coral: #e06c4f;
+  --color-coral-dark: #c95a3f;
+  --color-coral-light: #f5d5cc;
+  --color-gold: #d4a843;
+  --color-gold-light: #f0d9a0;
+  --color-cream: #faf6f0;
+  --color-cream-dark: #f0e8d8;
+  --color-charcoal: #2d2a26;
+  --color-charcoal-light: #4a453f;
+  --color-sage: #7a9e7e;
+  --color-sage-light: #e8f0e9;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Outfit", system-ui, sans-serif;
+}
+
+/* Diagonal stripe pattern — signature Malaysian motif */
+.stripe-pattern {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 12px,
+    hsla(14, 65%, 58%, 0.06) 12px,
+    hsla(14, 65%, 58%, 0.06) 24px
+  );
+}
+
+.stripe-pattern-gold {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 12px,
+    hsla(42, 65%, 52%, 0.08) 12px,
+    hsla(42, 65%, 52%, 0.08) 24px
+  );
+}
+
+/* Focus */
+*:focus-visible {
+  outline: 2px solid var(--color-coral);
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
